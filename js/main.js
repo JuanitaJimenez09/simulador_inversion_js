@@ -2,9 +2,6 @@ function simulador(){
     const contPre = document.getElementById("pre-simulation");
     const contPost = document.getElementById("post-simulation");
 
-    contPost.classList.remove('disabled'); 
-    contPre.classList.add('disabled');
-
     // variables que capturan los valores de los campos
 
     let cNombres = document.getElementById("Nombres").value;
@@ -26,7 +23,10 @@ function simulador(){
     let ganancia = 0;
     let total = 0;
 
-    switch (cTiempo) {
+    if(cNombres=="" || cEmail=="" || cTelefono==""|| cMonto=="" || cTiempo==""){
+        alert("")
+    }else{
+        switch (cTiempo) {
              case '1':
             // en este case realizaremos el calculo si el tiempo corresponde a un año
                ganancia = (cMonto * 0.008)*12;
@@ -59,6 +59,8 @@ function simulador(){
     sGanancia.textContnt = ganancia;
     sNombres.textContent = cNombres;
     sCorreo.textContent = cEmail;
+    contPost.classList.remove('disabled'); 
+    contPre.classList.add('disabled');
 
 
 }
@@ -67,3 +69,7 @@ function simulador(){
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('calcular').addEventListener('click', simulador);
 });
+
+    }
+
+    

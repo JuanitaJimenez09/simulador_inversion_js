@@ -24,8 +24,11 @@ function simulador(){
     let total = 0;
 
     if(cNombres=="" || cEmail=="" || cTelefono==""|| cMonto=="" || cTiempo==""){
-        alert("")
+        alert("Complete los cambios obligatorios")
     }else{
+    contPost.classList.remove('disabled'); 
+    contPre.classList.add('disabled');
+    
         switch (cTiempo) {
              case '1':
             // en este case realizaremos el calculo si el tiempo corresponde a un año
@@ -59,8 +62,7 @@ function simulador(){
     sGanancia.textContnt = ganancia;
     sNombres.textContent = cNombres;
     sCorreo.textContent = cEmail;
-    contPost.classList.remove('disabled'); 
-    contPre.classList.add('disabled');
+
 
 
 }

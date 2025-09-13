@@ -22,10 +22,10 @@
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: #32d0b3;
+    color: #ec4ca2;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #2c92f3;
+    border-bottom: 2px solid #0e0e0f;
 }
 
 .cont-flex{
@@ -92,24 +92,24 @@ form button{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #32d0b3;
+    background: #ec4ca2;
     color: #fff;
-    border: 1px solid #1c9882;
+    border: 1px solid  #da80b0;
     transition: .4s;
     cursor: pointer;
 }
 
 form button:hover{
     background: #f5f8fa;
-    border: 1px solid #1c9882;
-    color: #1c9882;
+    border: 1px solid #ec4ca2;
+    color: #ec4ca2;
 }
 
 input, select{
     padding: 14px 30px;
     background: #f5f8fa;
     border: 0;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid#da80b0;
     outline: none;
 }
 input::placeholder {
@@ -143,7 +143,7 @@ input::placeholder {
 }
 
 .right .post-simulation h3{
-    color: #202d37;
+    color: #da80b0;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 40px;
@@ -156,7 +156,7 @@ input::placeholder {
 }
 
 .right .total{
-    background: #1c988259;
+    background: #ec4ca2;
     padding: 30px;
 }
 
@@ -179,7 +179,7 @@ input::placeholder {
 
 .notificacion{
     padding: 20px;
-    border: 1px solid #1c9882;
+    border: 1px solid#ec4ca2;
     margin-top: 40px;
 }
 
@@ -189,4 +189,10 @@ input::placeholder {
 
 .notificacion h5 span{
     font-weight: 700;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #ed84bc;
 }
